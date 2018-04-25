@@ -12,9 +12,10 @@ export function onChange(settings, fieldName, value) {
       };
 }
 
-export function createNewLocationFetch() {
+export function createNewLocationFetch(locationName) {
     return {
-        type: types.CREATE_NEW_LOCATION_FETCH
+        type: types.CREATE_NEW_LOCATION_FETCH,
+        locationName
     }
 }
 
@@ -37,7 +38,7 @@ export function createNewLocation(locationName) {
         return () => { false }
     }
     return function (dispatch) {
-        dispatch(createNewLocationFetch());
+        dispatch(createNewLocationFetch(locationName));
         return weatherService.getDailyWeather(locationName)
         .then( newLocation => { 
             dispatch( createNewLocationSuccess(newLocation) ); 

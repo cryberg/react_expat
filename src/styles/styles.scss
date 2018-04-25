@@ -8,10 +8,8 @@ html {
 }
 body {
   font: 1.6rem 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -27,7 +25,6 @@ body {
 }
 
 form {
-  // text-align: center;
   background-color: #f7f7f9;
   padding: 2rem calc(50% - 13rem);
 }
@@ -44,6 +41,7 @@ form {
     .alert-danger {
       color: $error-red;
       font-size: 1.2rem;
+      width: 16rem;
     }
   }
 }
@@ -57,6 +55,7 @@ form {
   border: 1px solid #ced4da;
   border-radius: .5rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  width: 16rem;
 }
 
 .btn {
@@ -82,6 +81,7 @@ form {
 .row-item {
   width: 100%;
   border-bottom: 1px solid #ddd;
+  position: relative;
   > div {
     display: inline-block;
   }
@@ -90,6 +90,7 @@ form {
     background: none;
     border: none;
     color: $grey-text;
+    position: absolute;
     &:hover, &:focus {
       color: blue;
     }     
@@ -97,9 +98,12 @@ form {
 }
 
 .wrapper {
-  width: 23rem;
+  width: 24rem;
   > div {
     display: inline-block;
+  }
+  &:nth-of-type(2) {
+    text-align: center;
   }
 }
 
@@ -120,7 +124,6 @@ form {
 }
 .temp-cell {
   width: 40%;
-  text-align: center;
   div:first-child {
     font-size: 2.1rem;
     sup {
@@ -129,3 +132,33 @@ form {
   }
 }
 
+/*Media Queries*/
+@media screen and (min-width: 32rem) {
+  body {
+    width: 51rem;
+  }
+
+  .row-item {
+    .wrapper:nth-of-type(2) {
+      text-align: center;
+    }
+    button {
+      top: calc(50% - 1.25rem);    
+    }
+  }
+}
+
+@media screen and (max-width: 32rem) {
+  body {
+    width: 27rem;
+  }
+
+  .row-item {
+    .wrapper:nth-of-type(2) {
+      text-align: left;
+    }
+    button {
+      top: 1.5rem;
+    }
+  }
+}

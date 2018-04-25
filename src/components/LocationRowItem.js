@@ -12,7 +12,6 @@ const LocationRowItem = ({location, actions}) => {
                 <div className="location-name">{location.name}</div>
                 <img className="condition-icon" src={location.condition.icon} height="35" width="35"/>
                 <div className="secondary-text">{location.condition.text}</div>
-                {/* <div className="condition">Moderate or heavy showers of ice pellets</div>   */}
             </div>
             <div className="wrapper">
                 <div className="temp-cell">
