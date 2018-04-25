@@ -24,11 +24,10 @@ const AboutPage = () => {
         <li>Include the local time for each location</li>
         <li>Use the GoogleMaps API to automatically load the weather at your current location</li>
         <li>Allow the user to get the hourly forecase by clicking on a saved location</li>
-        <li>Actually save the "saved" locations into a backend</li>
       </ul>
 
       <p>
-        Things I'd do differently:
+        Things I&apos;d do differently:
       </p>
       <ul>
         <li>Pick a different Weather API. This one, at the free level, does not allow for batch calls</li>

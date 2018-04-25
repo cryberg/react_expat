@@ -34,7 +34,7 @@ class WeatherService {
                         resolve(dailyWeather);
                     } 
                 }).catch(error => {
-                    reject((!!error.response ? error.response.data.error.message : error.message));                    
+                    reject((error.response ? error.response.data.error.message : error.message));                    
                 }
             );
         });

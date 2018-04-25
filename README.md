@@ -8,7 +8,7 @@
 
     `npm run setup`
 
-4. **Run the example app**
+4. **Run the app locally**
 
     `npm start -s`
 
