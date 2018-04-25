@@ -2,8 +2,7 @@
 
 1. **Clone the project**
 
-    CHANGE THIS TO YOUR GIT LINK
-    `git clone https://github.com/coryhouse/react-slingshot.git`.
+    `git clone https://github.com/cryberg/react_expat.git`.
 
 3. **Run the setup script**
 
