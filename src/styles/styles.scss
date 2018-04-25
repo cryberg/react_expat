@@ -1,0 +1,131 @@
+/* Variables */
+$grey-text: #737379;
+$error-red: #dc3545;
+
+/* Styles */
+html {
+  font-size: 62.5%;
+}
+body {
+  font: 1.6rem 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.4rem;
+  color: #4d4d4d;
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 300;
+}
+
+.empty-view {
+  text-align: center;
+  height: 4rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+form {
+  // text-align: center;
+  background-color: #f7f7f9;
+  padding: 2rem calc(50% - 13rem);
+}
+.form-group {
+  display: inline-block;
+  &.has-error {
+    input {
+      border-color: $error-red;      
+      &:focus{ 
+        box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+        outline: none;
+      }
+    }
+    .alert-danger {
+      color: $error-red;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.form-control {
+  padding: .375rem .75rem;
+  margin-right: .5rem;
+  line-height: 1.5;
+  color: #495057;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .5rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn {
+  font-weight: 400;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  border-radius: .5rem;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.add-btn {
+  vertical-align: top;
+  margin-top: 1.4rem;
+}
+
+.list-container {
+  padding-top: 2rem;
+}
+.row-item {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  > div {
+    display: inline-block;
+  }
+  button {
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    color: $grey-text;
+    &:hover, &:focus {
+      color: blue;
+    }     
+  }
+}
+
+.wrapper {
+  width: 23rem;
+  > div {
+    display: inline-block;
+  }
+}
+
+.location-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: calc(100% - 35px);
+}
+
+.condition-icon {
+  position: relative;
+  top: 1.3rem;
+}
+
+.secondary-text {
+  font-size: 1.2rem;
+  color: $grey-text;
+}
+.temp-cell {
+  width: 40%;
+  text-align: center;
+  div:first-child {
+    font-size: 2.1rem;
+    sup {
+      font-size: 1rem;
+    }
+  }
+}
+
