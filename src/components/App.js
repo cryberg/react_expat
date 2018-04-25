@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, NavLink, Route } from 'react-router-dom';
-import FuelSavingsPage from './containers/FuelSavingsPage';
 import AboutPage from './AboutPage';
 import WeatherPage from './containers/WeatherPage';
 import NotFoundPage from './NotFoundPage';
@@ -18,15 +17,10 @@ class App extends React.Component {
       <div>
         <nav>
           <NavLink exact to="/" activeStyle={activeStyle}>Weather</NavLink>
-          <NavLink to="/fuel-savings" activeStyle={activeStyle}> Fuel Page</NavLink>
           {' | '}
           <NavLink to="/about" activeStyle={activeStyle}>About</NavLink>
-          {/* {' | '} */}
-          {/* <NavLink to="/" activeStyle={activeStyle}>Today's Weather</NavLink> */}
         </nav>
         <Switch>
-          {/* <Route exact path="/" component={HomePage} /> */}
-          <Route path="/fuel-savings" component={FuelSavingsPage} />
           <Route path="/about" component={AboutPage} />
           <Route path="/" component={WeatherPage} />          
           <Route component={NotFoundPage} />

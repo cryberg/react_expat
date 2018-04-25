@@ -24,6 +24,8 @@ const AboutPage = () => {
         <li>Include the local time for each location</li>
         <li>Use the GoogleMaps API to automatically load the weather at your current location</li>
         <li>Allow the user to get the hourly forecase by clicking on a saved location</li>
+        <li>Fix the content showing before the CSS is loaded</li>
+        <li>Clean up any unusued dependancies</li>        
       </ul>
 
       <p>

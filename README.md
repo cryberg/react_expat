@@ -16,6 +16,9 @@
 
 ## Technologies
 
+React, Redux, WEATHER API
+Tested in Jest with Enzyme
+
 Slingshot offers a rich development experience using the following technologies:
 
 | **Tech** | **Description** |**Learn More**|

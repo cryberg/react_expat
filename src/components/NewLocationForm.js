@@ -15,8 +15,7 @@ const NewLocationForm = ({weatherInfo, onSubmit, onChange}) => {
             error = {weatherInfo.errorMsg}
             />
             
-            <button 
-            type="submit" className="btn add-btn" disabled={weatherInfo.isFetchingNewLocation}>
+            <button type="submit" className="btn add-btn" disabled={weatherInfo.isFetchingNewLocation}>
                 {weatherInfo.isFetchingNewLocation ? "Adding..." : "Add!"}
             </button>
         </form>
